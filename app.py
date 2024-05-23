@@ -8,29 +8,6 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Custom CSS for background
-st.markdown(
-    """
-    <style>
-    body::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        background-color: #e5e5f7;
-        opacity: 0.8;
-        background-image: radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
-        background-size: 20px 20px;
-        background-position: 0 0, 10px 10px;
-        z-index: -1;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
-
 # App title and description
 st.title("Harshal Panchal's App Showcase")
 st.subheader("Explore the collection of apps built by Harshal Panchal")
@@ -40,7 +17,7 @@ apps = [
     {
         "name": "VizFlex",
         "description": "An intuitive data visualization tool that allows users to upload CSV files and create various plots.",
-        "link": "https://github.com/yourusername/vizflex"
+        "link": "https://vizflex.streamlit.app/"
     },
     {
         "name": "AnalyzeKit - Because Life's Too Short for Mundane Analysis!",
